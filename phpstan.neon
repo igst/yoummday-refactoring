@@ -1,0 +1,14 @@
+# phpstan.neon
+includes:
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: max
+    paths:
+        - src/App
+        - Test
+    excludePaths:
+        - src/App/main.php
+    scanDirectories:
+        - vendor
+
